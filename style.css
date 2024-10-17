@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.navbar-left a {
+    color: black;
+    font-size: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-left a:hover {
+    color: gray;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url("https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+.hero h1{
+    color: rgb(11, 11, 11);
+    text-align: center;
+} 
+
+.about-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-section p {
+    color: #666;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-image p {
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
+.about-description {
+    margin-top: 30px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.skills, .statistics {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 150px;
+    position: relative;
+    width: 80%;
+}
+.skill-bar-fill {
+    background-color: #454545;
+    height: 20px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: white;
+    width: 0;
+}
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.stat-item {
+    background-color: #454545;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+.stat-item h3 {
+    margin: 10px 0;
+}
+
+.hero2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-image: url("https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.my-work {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.my-work h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.my-work p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.work-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.work-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.load-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #454545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.load-more:hover {
+    background-color: #333;
+}
+
+.hll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-image: url("https://media.istockphoto.com/id/1297855341/photo/huge-white-grey-maze-%D1%81hoices-and-challenge-theme-%D1%81omplex-way-to-find-exit-business-concept-or.jpg?s=1024x1024&w=is&k=20&c=gTpN0wgTz7GGoFNWjBzWB5Qp7oqAjvPJ5B8EdjLy6OQ=");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.contact-details img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-text p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.contact-text span {
+    font-weight: bold;
+    color: black;
+}
+
+.contact-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: gray;
+}
+
+.footer {
+    background-color: #454545;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.to-top {
+    display: inline-block;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.to-top:hover {
+    color: gray;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: auto;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: gray;
+}
